@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_5ec523cf86506766e39a252e954103ea {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_5ec523cf86506766e39a252e954103ea" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_5ec523cf86506766e39a252e954103ea = L.map(
+                "map_5ec523cf86506766e39a252e954103ea",
+                {
+                    center: [51.5074, -0.1278],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_6f8f3dd730a7ecc860c9322ddd9762c1 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_6f8f3dd730a7ecc860c9322ddd9762c1.addTo(map_5ec523cf86506766e39a252e954103ea);
+        
+    
+            var marker_3f80138dc57aa62e7d7e7fa43a0bbc3c = L.marker(
+                [51.5033, -0.1145],
+                {}
+            ).addTo(map_5ec523cf86506766e39a252e954103ea);
+        
+    
+            var icon_08845c5a6ae5f818b05c2266b3cf48ba = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_3f80138dc57aa62e7d7e7fa43a0bbc3c.setIcon(icon_08845c5a6ae5f818b05c2266b3cf48ba);
+        
+    
+        var popup_6e879ceb9b22b6207b283b3dffbec6d4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7494f6635a3e16da3f81a483e85cf348 = $(`<div id="html_7494f6635a3e16da3f81a483e85cf348" style="width: 100.0%; height: 100.0%;">Start Station: Waterloo Station 3, Waterloo Trips: 4084</div>`)[0];
+                popup_6e879ceb9b22b6207b283b3dffbec6d4.setContent(html_7494f6635a3e16da3f81a483e85cf348);
+            
+        
+
+        marker_3f80138dc57aa62e7d7e7fa43a0bbc3c.bindPopup(popup_6e879ceb9b22b6207b283b3dffbec6d4)
+        ;
+
+        
+    
+    
+            var marker_d3aac39c55d8124a3acb0e7e57eac455 = L.marker(
+                [51.5308, -0.1238],
+                {}
+            ).addTo(map_5ec523cf86506766e39a252e954103ea);
+        
+    
+            var icon_313b795e4a7998d9c3501f0ce7829a5e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_d3aac39c55d8124a3acb0e7e57eac455.setIcon(icon_313b795e4a7998d9c3501f0ce7829a5e);
+        
+    
+        var popup_f06e3f77afb0d0fe6f912e8738126e76 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_651d73f0b231ebe63ea70c9bb7d46cb8 = $(`<div id="html_651d73f0b231ebe63ea70c9bb7d46cb8" style="width: 100.0%; height: 100.0%;">Start Station: Belgrove Street , King's Cross Trips: 3145</div>`)[0];
+                popup_f06e3f77afb0d0fe6f912e8738126e76.setContent(html_651d73f0b231ebe63ea70c9bb7d46cb8);
+            
+        
+
+        marker_d3aac39c55d8124a3acb0e7e57eac455.bindPopup(popup_f06e3f77afb0d0fe6f912e8738126e76)
+        ;
+
+        
+    
+    
+            var marker_abcfb24e5b1ba64ec193b4baba95ba6f = L.marker(
+                [51.5175, -0.0836],
+                {}
+            ).addTo(map_5ec523cf86506766e39a252e954103ea);
+        
+    
+            var icon_714fffaeb22876a28608ac8cab5ea304 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_abcfb24e5b1ba64ec193b4baba95ba6f.setIcon(icon_714fffaeb22876a28608ac8cab5ea304);
+        
+    
+        var popup_70e54f7d40bda8e834d2efc108310845 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0a38ede9e4b4ffdf7a6a90c0bc61380c = $(`<div id="html_0a38ede9e4b4ffdf7a6a90c0bc61380c" style="width: 100.0%; height: 100.0%;">Start Station: Wormwood Street, Liverpool Street Trips: 3032</div>`)[0];
+                popup_70e54f7d40bda8e834d2efc108310845.setContent(html_0a38ede9e4b4ffdf7a6a90c0bc61380c);
+            
+        
+
+        marker_abcfb24e5b1ba64ec193b4baba95ba6f.bindPopup(popup_70e54f7d40bda8e834d2efc108310845)
+        ;
+
+        
+    
+    
+            var marker_e20d77bd515e98550f4016fd4691605e = L.marker(
+                [51.5025, -0.1528],
+                {}
+            ).addTo(map_5ec523cf86506766e39a252e954103ea);
+        
+    
+            var icon_2cb1e8a49c92048ecacec5a80637252a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_e20d77bd515e98550f4016fd4691605e.setIcon(icon_2cb1e8a49c92048ecacec5a80637252a);
+        
+    
+        var popup_2ea853a787bae67142abc115ec1154c5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_aadfd98c7b4e25c73e1fec2149dacc00 = $(`<div id="html_aadfd98c7b4e25c73e1fec2149dacc00" style="width: 100.0%; height: 100.0%;">Start Station: Hyde Park Corner, Hyde Park Trips: 2895</div>`)[0];
+                popup_2ea853a787bae67142abc115ec1154c5.setContent(html_aadfd98c7b4e25c73e1fec2149dacc00);
+            
+        
+
+        marker_e20d77bd515e98550f4016fd4691605e.bindPopup(popup_2ea853a787bae67142abc115ec1154c5)
+        ;
+
+        
+    
+    
+            var marker_153b371fb8bc7954707161d3074d462b = L.marker(
+                [51.5033, -0.114],
+                {}
+            ).addTo(map_5ec523cf86506766e39a252e954103ea);
+        
+    
+            var icon_bd076b054953c8d80592e345d1acbe2c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_153b371fb8bc7954707161d3074d462b.setIcon(icon_bd076b054953c8d80592e345d1acbe2c);
+        
+    
+        var popup_6fb4c951c136c7b06e5fc20ae7c579d5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7c12d6bc3521f41f877fc5606bedb1c4 = $(`<div id="html_7c12d6bc3521f41f877fc5606bedb1c4" style="width: 100.0%; height: 100.0%;">Start Station: Waterloo Station 1, Waterloo Trips: 2728</div>`)[0];
+                popup_6fb4c951c136c7b06e5fc20ae7c579d5.setContent(html_7c12d6bc3521f41f877fc5606bedb1c4);
+            
+        
+
+        marker_153b371fb8bc7954707161d3074d462b.bindPopup(popup_6fb4c951c136c7b06e5fc20ae7c579d5)
+        ;
+
+        
+    
+</script>
+</html>
